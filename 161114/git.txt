@@ -1,0 +1,37 @@
+c:\Users\Ton\Downloads\0\04\putty.exe
+sudo apt-get update
+sudo apt-get upgrade
+cd stack/sisop/
+
+
+sudo gcc cliente.c -o cliente.exe
+sudo gcc servidor.c -o servidor.exe
+sudo gcc teste.c -o teste.exe
+./servidor.exe
+./cliente.exe
+
+
+dmesg |grep sdb
+
+mount /dev/sdb1 /media/pendrive
+
+sudo gcc -pthread jogo.c -o jogo.exe
+./jogo.exe
+
+sudo gcc hora.c -o hora.exe
+./hora.exe
+
+- Instalacao e configuracao
+sudo apt-get install git-core
+git config --global user.name "Airton"
+git config --global user.email conaron@gmail.com
+
+- iniiar e setar destino
+git init
+git remote add origin https://github.com/conaron/sisop.git
+
+- atualizar e enviar
+git add .
+git commit -m "atualizacao"
+git push -u origin master
+
